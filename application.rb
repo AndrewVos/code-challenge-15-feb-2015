@@ -8,7 +8,7 @@ def draw_prime_table
       a * b
     end
   end
-  primes.unshift(0)
+  primes.unshift("")
   table = table.each_with_index.map do |row,index|
     row.unshift(primes[index + 1])
   end
