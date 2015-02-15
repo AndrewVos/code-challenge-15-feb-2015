@@ -7,9 +7,9 @@ class TestPrimeSieve < Minitest::Test
     @sieve = PrimeSieve.new
   end
 
-  def test_fixed_amount
+  def test_take
     expected_primes = [2,  3,  5,  7, 11, 13, 17, 19, 23, 29]
-    primes = @sieve.fixed_amount(10)
+    primes = @sieve.take(10)
     assert_equal expected_primes, primes
   end
 

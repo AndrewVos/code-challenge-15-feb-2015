@@ -1,5 +1,5 @@
 class PrimeSieve
-  def fixed_amount amount
+  def take amount
     primes = upto(amount * amount)
     primes.take(amount)
   end
